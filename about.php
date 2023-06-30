@@ -18,7 +18,7 @@ include './navbar.php';
   <div class="row mt-5">
     <div class="col-md-1 col-sm-1"></div>
     <div class="col-md-11 col-sm-11">
-      <img src="./image/774-7744281_samsung-electronics-samsung-electronic-product-png.png">
+      <img src="./image/774-7744281_samsung-electronics-samsung-electronic-product-png.png" class="img-fluid">
     </div>
 
   </div>

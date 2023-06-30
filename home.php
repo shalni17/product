@@ -22,7 +22,7 @@ include './navbar.php';
     <div class="col-md-6 col-sm-6">
       <div class="row">
         <div class="col-md-12">
-          <img src="./image/1474287957_18TSa8_electronics-shutterstock-470.jpg">
+          <img src="./image/1474287957_18TSa8_electronics-shutterstock-470.jpg" class="img-fluid">
         </div>
       </div>
     </div>
