@@ -1,0 +1,89 @@
+<?php
+include './header.php';
+include './navbar.php';
+?>
+
+
+
+
+<div class="container-fluid">
+<h1 class="text-center mb-3 mt-3 ">CONTACT US</h1>
+<form>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-4">
+                            <label for="Getting in touch is easy" class="form-label"><b>
+                                    <h2>Getting in touch is easy!</h2>
+                                </b></label>
+                        </div>
+                        <div class="col-md-7 col-sm-8 mt-3">
+                            <textarea class="form-control" placeholder="Your name"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6">
+                            <label for="Happy face based on mars" class="form-label  mt-4"><b>
+                                    <h6>Happy face based on mars</h6>
+                                </b></label>
+                        </div>
+                        <div class="col me-7 mt-3">
+                            <textarea class="form-control" placeholder="Your Email"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6">
+                            <a href="...">
+                                Find us here
+                            </a>
+                        </div>
+                        <div class="col me-7 mt-3">
+                            <textarea class="form-control" placeholder="Description"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <label for="Find us here!" class="form-label mt-4"><b>
+                                    <h6><u>contact23@coolappse.com</u></h6>
+                                </b></label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <a href="https://www.facebook.com/TajHotels/">
+                                <i class="fa-brands fa-facebook ms-5"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <div class="text-end me-4">
+                                <button type="button" class="btn btn-warning mb-3">Send to the outer space</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="./image/1474287957_18TSa8_electronics-shutterstock-470.jpg" class="img-fluid">
+                </div>
+
+            </div>
+        </form>
+
+</div>
+       
+       
+   
+
+
+
+
+
+
+
+
+<?php
+include './footer.php'
+?>

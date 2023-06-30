@@ -1,0 +1,22 @@
+.imgbg{
+    background-image: url('../image/pexels-garrett-morrow-682933.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: block;
+    
+ 
+   
+   
+}
+.bgcolor
+{
+    background-color: #f1f4f5;
+}
+imagebg{
+   background-image: url('./3124512.webp');
+   background-size: cover;
+}
+.colorbg{
+    background-color: rgb(103, 37, 165);
+}
