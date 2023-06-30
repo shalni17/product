@@ -25,7 +25,7 @@ include './navbar.php';
 <div class="container-fluid">
   <form method="POST">
     <div class="row">
-      <div class="col-md-6 col-sm-12 col-12">
+      <div class="col-md-6 col-sm-12 col-12 col-lg-6 col-xxl-6">
         <h1 class="mt-4 mb-4 text-center">Create Products</h1>
 
         <div class="row mt-2">
@@ -81,7 +81,7 @@ include './navbar.php';
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-sm-12 col-12 mt-5">
+      <div class="col-md-6 col-sm-12 col-12 col-lg-6  col-xxl-6 mt-5">
         <img src="./image/electronics.jpg" class="img-fluid">
       </div>
     </div>
