@@ -48,5 +48,16 @@ $(document).ready(function () {
 })
 
 
+var touchtextarea = $('#touch');
 
 
+$(document).ready(function () {
+    $('#button').on('click', function () {
+        if (touchtextarea.val() === '') {
+            touchtextarea.addClass("is-invalid")
+        } else {
+            touchtextarea.removeClass("is-invalid");
+            touchtextarea.addClass("is-valid");
+        }
+    })
+})
