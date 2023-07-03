@@ -40,7 +40,7 @@
 
                     <div class="col-lg-3 col-md-6 footer-links text-secondary mt-5">
                         <h4>Our Social Networks</h4>
-                        <p> Social media today is promoting electronic products replacing the traditional  advertisements. It has  become a very important  tool for the Brands to  promote electronic goods at cheaper prices</p>
+                        <p> Social media today is promoting electronic products replacing the traditional advertisements. It has become a very important tool for the Brands to promote electronic goods at cheaper prices</p>
 
                         <div class="socail-links mt-3">
                             <a href="#"><i class="fa-brands fa-twitter"></i></a>
