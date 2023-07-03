@@ -12,8 +12,6 @@ if (isset($_POST['submit'])) {
 
     if (!$result) {
         echo "sql errror";
-    } else {
-        header('location:./contactT.php');
     }
 }
 
@@ -75,7 +73,7 @@ include '../navbar/navbar.php';
                             <i class="fa-brands fa-twitter"></i>
                         </a>
                         <div class="text-end me-4">
-                            <button type="submit" class="btn btn-warning mb-3" name="submit" id="submit"required>Send to the outer space</button>
+                            <button type="submit" class="btn btn-warning mb-3" name="submit" id="submit">Send to the outer space</button>
                             <button type="submit" class="btn btn-secondary mb-3" name="back" id="button">Back</button>
                         </div>
 

@@ -52,7 +52,7 @@ var touchtextarea = $('#touch');
 
 
 $(document).ready(function () {
-    $('#submit').on('click', function () {
+    $('#button').on('click', function () {
         if (touchtextarea.val() === '') {
             touchtextarea.addClass("is-invalid")
         } else {
