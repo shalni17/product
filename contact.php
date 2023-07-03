@@ -1,6 +1,29 @@
 <?php
+include './config.php';
+
+if (isset($_POST['submit'])) {
+  $touch = $_POST['touch'];
+  $email = $_POST['email'];
+  $description = $_POST['description'];
+  
+
+  $query = "INSERT INTO `contact`(`touch`,`email`,`description`)VALUES('$touch','$email','$description')";
+  $result = mysqli_query($conn, $query);
+
+  if (!$result) {
+    echo "sql errror";
+  } else {
+  }
+}
+
+
+
 include './header.php';
 include './navbar.php';
+
+
+
+
 ?>
 
 
@@ -8,9 +31,9 @@ include './navbar.php';
 
 <div class="container-fluid">
 <h1 class="text-center mb-3 mt-3 ">CONTACT US</h1>
-<form>
+<form method="POST">
             <div class="row mt-5">
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-8 col-8">
                     <div class="row">
                         <div class="col-md-5 col-sm-4">
                             <label for="Getting in touch is easy" class="form-label"><b>
@@ -18,7 +41,7 @@ include './navbar.php';
                                 </b></label>
                         </div>
                         <div class="col-md-7 col-sm-8 mt-3">
-                            <textarea class="form-control" placeholder="Your name"></textarea>
+                            <textarea class="form-control" placeholder="Your name" id="touch" name="touch"></textarea>
                         </div>
                     </div>
 
@@ -29,7 +52,7 @@ include './navbar.php';
                                 </b></label>
                         </div>
                         <div class="col me-7 mt-3">
-                            <textarea class="form-control" placeholder="Your Email"></textarea>
+                            <textarea class="form-control" placeholder="Your Email" id="email" name="email"></textarea>
                         </div>
                     </div>
                     <div class="row">
@@ -39,7 +62,7 @@ include './navbar.php';
                             </a>
                         </div>
                         <div class="col me-7 mt-3">
-                            <textarea class="form-control" placeholder="Description"></textarea>
+                            <textarea class="form-control" placeholder="Description" id="description" name="description"></textarea>
                         </div>
                     </div>
                     <div class="row">
@@ -59,13 +82,13 @@ include './navbar.php';
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                             <div class="text-end me-4">
-                                <button type="button" class="btn btn-warning mb-3">Send to the outer space</button>
+                                <button type="submit" class="btn btn-warning mb-3" name="submit" id="submit">Send to the outer space</button>
                             </div>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12 col-12">
                     <img src="./image/1474287957_18TSa8_electronics-shutterstock-470.jpg" class="img-fluid">
                 </div>
 
