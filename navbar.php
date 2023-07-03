@@ -37,7 +37,8 @@
             Admin
           </a>
           <ul class="dropdown-menu ">
-            <li><a class="dropdown-item " href="./product.php">Create Products</a></li>
+            <li><a class="dropdown-item " href="./product.php"> Products</a></li>
+            <li><a class="dropdown-item " href="./contactT.php"> Contact Us messgaes</a></li>
 
           
            

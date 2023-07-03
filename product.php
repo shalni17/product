@@ -12,7 +12,7 @@ include './navbar.php';
 
 <div class="container">
     <div class="float-end mt-5">
-      <a href="./create.php" class="btn btn-primary">Create</a>
+      <a href="./create.php"  class="btn btn-primary">Create</a>
     </div>
     <table class="table table-striped table-hover">
       <thead>
@@ -56,6 +56,9 @@ include './navbar.php';
                <td  class='text-center'>
                   <a href='./delete.php?id=" . $row['id'] . "' class='btn btn-danger'>Delete</a>
               </td>
+              <td  class='text-center'>
+              <a href='./edit.php?id=" . $row['id'] . "' class='btn btn-primary'>Edit</a>
+          </td>
                   </tr>
                 ";
         }

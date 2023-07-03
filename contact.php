@@ -13,6 +13,7 @@ if (isset($_POST['submit'])) {
   if (!$result) {
     echo "sql errror";
   } else {
+    header('location:./contactT.php');
   }
 }
 
@@ -41,7 +42,7 @@ include './navbar.php';
                                 </b></label>
                         </div>
                         <div class="col-md-7 col-sm-8 mt-3">
-                            <textarea class="form-control" placeholder="Your name" id="touch" name="touch"></textarea>
+                            <input type="text" class="form-control" placeholder="Your name" id="touch" name="touch"></textarea>
                         </div>
                     </div>
 
@@ -52,7 +53,7 @@ include './navbar.php';
                                 </b></label>
                         </div>
                         <div class="col me-7 mt-3">
-                            <textarea class="form-control" placeholder="Your Email" id="email" name="email"></textarea>
+                        <input type="text" class="form-control" placeholder="Your Email" id="email" name="email"></textarea>
                         </div>
                     </div>
                     <div class="row">
@@ -83,6 +84,7 @@ include './navbar.php';
                             </a>
                             <div class="text-end me-4">
                                 <button type="submit" class="btn btn-warning mb-3" name="submit" id="submit">Send to the outer space</button>
+                                <button type="submit" class="btn btn-secondary mb-3" name="back" id="button">Back</button>
                             </div>
 
                         </div>
