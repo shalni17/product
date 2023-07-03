@@ -33,7 +33,7 @@ include '../navbar/navbar.php';
                             </b></label>
                     </div>
                     <div class="col-md-7 col-sm-8 mt-3">
-                        <input type="text" class="form-control" placeholder="Your name" id="touch" name="touch"></textarea>
+                        <input type="text" class="form-control" placeholder="Your name" id="touch" name="touch"required></textarea>
                     </div>
                 </div>
 
@@ -44,7 +44,10 @@ include '../navbar/navbar.php';
                             </b></label>
                     </div>
                     <div class="col me-7 mt-3">
-                        <input type="text" class="form-control" placeholder="Your Email" id="email" name="email"></textarea>
+                        <input type="text" class="form-control " placeholder="Your Email" id="email" name="email"required></textarea>
+                         <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
                     </div>
                 </div>
                 <div class="row">
@@ -54,7 +57,7 @@ include '../navbar/navbar.php';
                         </a>
                     </div>
                     <div class="col me-7 mt-3">
-                        <textarea class="form-control" placeholder="Description" id="description" name="description"></textarea>
+                        <textarea class="form-control" placeholder="Description" id="description" name="description" required></textarea>
                     </div>
                 </div>
                 <div class="row">
@@ -74,7 +77,7 @@ include '../navbar/navbar.php';
                             <i class="fa-brands fa-twitter"></i>
                         </a>
                         <div class="text-end me-4">
-                            <button type="submit" class="btn btn-warning mb-3" name="submit" id="submit">Send to the outer space</button>
+                            <button type="submit" class="btn btn-warning mb-3" name="submit" id="submit"required>Send to the outer space</button>
                             <button type="submit" class="btn btn-secondary mb-3" name="back" id="button">Back</button>
                         </div>
 

@@ -35,7 +35,7 @@ include '../navbar/navbar.php';
                         <label for="" class="form-label">Customer_Name</label>
                     </div>
                     <div class="col-md-8">
-                        <input type="text" name="customer" class="form-control">
+                        <input type="text" name="customer" class="form-control" required>
                     </div>
                 </div>
                 <div class="row mt-4">
@@ -43,7 +43,17 @@ include '../navbar/navbar.php';
                         <label for="productname" class="form-label">Product_name</label>
                     </div>
                     <div class="col-md-8">
-                        <input type="text" name="product" class="form-control">
+                        <input type="text" name="product" class="form-control" value="<?php  
+                       
+                        while ($row = mysqli_fetch_assoc($result)) {
+                         
+                          echo "
+                                 
+                                    <td>
+                                      " . $sno . "
+                                    </td> ";
+                                }
+                                ?>  required>
                     </div>
                 </div>
                 <div class="row mt-3">
@@ -51,7 +61,7 @@ include '../navbar/navbar.php';
                         <label for="price" class="form-label">Price</label>
                     </div>
                     <div class="col-md-8">
-                        <input type="text" name="price" class="form-control">
+                        <input type="text" name="price" class="form-control"required>
                     </div>
                 </div>
                 <div class="row mt-3">
@@ -59,7 +69,7 @@ include '../navbar/navbar.php';
                         <label for="quantity" class="form-label">Quantity</label>
                     </div>
                     <div class="col-md-8">
-                        <input type="text" name="quantity" class="form-control">
+                        <input type="text" name="quantity" class="form-control"required>
                     </div>
                 </div>
                 <div class="row mt-3">
@@ -67,7 +77,7 @@ include '../navbar/navbar.php';
                         <label for="totalprice" class="form-label">Total_Price</label>
                     </div>
                     <div class="col-md-8">
-                        <input type="text" name="tprice" class="form-control">
+                        <input type="text" name="tprice" class="form-control"required>
                     </div>
                 </div>
                 <div class="row mt-3">
@@ -75,7 +85,7 @@ include '../navbar/navbar.php';
                         <label for="address" class="form-label">Address</label>
                     </div>
                     <div class="col-md-8">
-                        <input type="text" name="address" class="form-control">
+                        <input type="text" name="address" class="form-control"required>
                     </div>
                 </div>
 
@@ -84,7 +94,7 @@ include '../navbar/navbar.php';
                         <label for="phoneno" class="form-label">Phone_no</label>
                     </div>
                     <div class="col-md-8">
-                        <input type="text" name="phone" class="form-control">
+                        <input type="text" name="phone" class="form-control"required>
                     </div>
                 </div>
                 <div class="row">
