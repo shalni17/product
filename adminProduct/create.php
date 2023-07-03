@@ -1,30 +1,38 @@
 <?php
-include './config.php';
+include '../config/config.php';
 
 if (isset($_POST['submit'])) {
   $category = $_POST['category'];
   $type = $_POST['type'];
   $price = $_POST['price'];
   $quantity = $_POST['quantity'];
-  $image = $_POST['image'];
+  $image = $_FILES['image'];
+  if ($image) {
+    $name = $image['name'];
+    $temp_name = $image['tmp_name'];
+    $full_path = $image['full_path'];
+   
+    $path = '../image/uploadProductImage/' . $name;
+    $isUploaded = move_uploaded_file($temp_name, $path);
+  } else {
+    echo "upload error";
+  }
 
-  $query = "INSERT INTO `electronic_shop`(`category`,`type`,`price`,`quantity`,`image`)VALUES('$category','$type','$price','$quantity','$image')";
+  $query = "INSERT INTO `electronic_shop`(`category`,`type`,`price`,`quantity`,`image`)VALUES('$category','$type','$price','$quantity','$name')";
   $result = mysqli_query($conn, $query);
 
   if (!$result) {
     echo "sql errror";
-  }else{
-    
-    
+  } else {
   }
 }
 
-include './header.php';
-include './navbar.php';
+include '../header/header.php';
+include '../navbar/navbar.php';
 ?>
 
 <div class="container-fluid">
-  <form method="POST">
+  <form method="POST" enctype="multipart/form-data">
     <div class="row">
       <div class="col-md-6 col-sm-12 col-12 col-lg-6 col-xxl-6">
         <h1 class="mt-4 mb-4 text-center">Create Products</h1>
@@ -34,13 +42,14 @@ include './navbar.php';
             <label for="text" class="form-label">Category</label>
           </div>
           <div class="col-md-8 col-sm-8 col-8">
-            <select class="form-select" name="category" aria-label="Default select example" id="category" >
-            <option selected disabled value="">Choose...</option>
-              <option>AC</option>
-              <option>Smart Watch</option>
-              <option>Smart TV</option>
-              <option>Laptop</option>
-              <option>Refrigerator</option>
+            <select class="form-select" name="category" aria-label="Default select example" id="category">
+              <option selected disabled value="">Choose...</option>
+              <option value="AC">AC</option>
+              <option value="Smart Watch">Smart Watch</option>
+              <option value="Smart TV">Smart TV</option>
+              <option value="Laptop">Laptop</option>
+              <option value="Refrigerator">Refrigerator</option>
+              <option value="Fan">Fan</option>
             </select>
           </div>
         </div>
@@ -49,7 +58,7 @@ include './navbar.php';
             <label for="text" class="form-label">Product type</label>
           </div>
           <div class="col-md-8 col-sm-8 col-8">
-            <input type="text" class="form-control" name="type" id="type"required>
+            <input type="text" class="form-control" name="type" id="type" required>
           </div>
         </div>
         <div class="row mt-2">
@@ -57,7 +66,7 @@ include './navbar.php';
             <label for="text" class="form-label">Product Price</label>
           </div>
           <div class="col-md-8 col-sm-8 col-8">
-            <input type="text" class="form-control" name="price" id="price"required>
+            <input type="text" class="form-control" name="price" id="price" required>
           </div>
         </div>
         <div class="row mt-2">
@@ -65,7 +74,7 @@ include './navbar.php';
             <label for="text" class="form-label">Quantity</label>
           </div>
           <div class="col-md-8 col-sm-8 col-8">
-            <input type="text" class="form-control" name="quantity" id="quantity"required>
+            <input type="text" class="form-control" name="quantity" id="quantity" required>
           </div>
         </div>
         <div class="row mt-2">
@@ -73,7 +82,7 @@ include './navbar.php';
             <label for="text" class="form-label">Image url</label>
           </div>
           <div class="col-md-8 col-sm-8 col-8">
-            <input type="file" class="form-control" name="image" id="image"required>
+            <input type="file" class="form-control" name="image" id="image">
           </div>
         </div>
         <div class="row">
@@ -83,7 +92,7 @@ include './navbar.php';
         </div>
       </div>
       <div class="col-md-6 col-sm-12 col-12 col-lg-6  col-xxl-6 mt-5">
-        <img src="./image/electronics.jpg" class="img-fluid">
+        <img src="../image/electronics.jpg" class="img-fluid">
       </div>
     </div>
   </form>
@@ -93,5 +102,5 @@ include './navbar.php';
 
 
 <?php
-include './footer.php'
+include '../footer/footer.php'
 ?>

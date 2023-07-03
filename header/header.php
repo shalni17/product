@@ -21,12 +21,12 @@
         </div>
       </div>
       <div class="ms-auto d-flex align-items-center float-end mt-2">
-        <h5><a href="./login.php" target="_blank" >
+        <h5><a href="../login.php" target="_blank" >
           <span>
             Login
           </span>
         </a>
-        <a href="./signup.php" target="_blank" class="ms-2">
+        <a href="../signup.php" target="_blank" class="ms-2">
           <span>
             Sign Up
           </span>

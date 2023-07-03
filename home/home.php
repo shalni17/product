@@ -1,6 +1,6 @@
 <?php
-include './header.php';
-include './navbar.php';
+include '../header/header.php';
+include '../navbar/navbar.php';
 ?>
 
 
@@ -22,7 +22,7 @@ include './navbar.php';
     <div class="col-md-6 col-sm-6">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-12">
-          <img src="./image/1474287957_18TSa8_electronics-shutterstock-470.jpg" class="img-fluid">
+          <img src="../image/1474287957_18TSa8_electronics-shutterstock-470.jpg" class="img-fluid">
         </div>
       </div>
     </div>
@@ -39,5 +39,5 @@ include './navbar.php';
 
 
 <?php
-include './footer.php'
+include '../footer/footer.php'
 ?>

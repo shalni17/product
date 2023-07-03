@@ -1,27 +1,28 @@
 <?php
-include './config.php';
+include '../config/config.php';
 
 
-$query = "SELECT * FROM `contact`";
+$query = "SELECT * FROM `electronic_shop`";
 
 $result = mysqli_query($conn, $query);
 
-include './header.php';
-include './navbar.php';
+include '../header/header.php';
+include '../navbar/navbar.php';
 ?>
 
 <div class="container">
     <div class="float-end mt-5">
-      
+      <a href="./create.php"  class="btn btn-primary">Create</a>
     </div>
     <table class="table table-striped table-hover">
       <thead>
         <tr>
           <th scope="col">Sno</th>
-          <th scope="col">touch</th>
-          <th scope="col">email</th>
-          <th scope="col">description</th>
-         
+          <th scope="col">Category</th>
+          <th scope="col">Product type</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Image url</th>
           <th scope="col" colspan="2" class="text-center">Action</th>
         </tr>
       </thead>
@@ -37,19 +38,27 @@ include './navbar.php';
                       " . $sno . "
                     </td>
                     <td>
-                       " . $row['touch'] . "
+                       " . $row['category'] . "
                     </td>
                     <td>
-                        " . $row['email'] . "
+                        " . $row['type'] . "
                     </td>
                     <td>
-                       " . $row['description'] . "
+                       " . $row['price'] . "
                     </td>
-                   
+                    <td>
+                        " . $row['quantity'] . "
+                    </td>
+                    <td>
+                    " . $row['image'] . "
+                </td>
          
                <td  class='text-center'>
                   <a href='./delete.php?id=" . $row['id'] . "' class='btn btn-danger'>Delete</a>
               </td>
+              <td  class='text-center'>
+              <a href='./edit.php?id=" . $row['id'] . "' class='btn btn-primary'>Edit</a>
+          </td>
                   </tr>
                 ";
         }
@@ -61,5 +70,5 @@ include './navbar.php';
   </div>
 
 <?php
-include './footer.php';
+include '../footer/footer.php';
 ?>

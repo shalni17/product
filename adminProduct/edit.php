@@ -1,5 +1,5 @@
 <?php
-include './config.php';
+include '../config/config.php';
 
 $id = $_GET['id'];
 
@@ -11,8 +11,8 @@ $row = mysqli_fetch_assoc($result);
 
 
 
-include './header.php';
-include './navbar.php';
+include '../header/header.php';
+include '../navbar/navbar.php';
 ?>
 
 <div class="container-fluid">
@@ -27,12 +27,13 @@ include './navbar.php';
           </div>
           <div class="col-md-8 col-sm-8 col-8">
             <select class="form-select" name="category" aria-label="Default select example" name="category" id="category" value="<?php echo $row['category'] ?>" >
-            <option selected disabled value="">Choose...</option>
-              <option>AC</option>
-              <option>Smart Watch</option>
-              <option>Smart TV</option>
-              <option>Laptop</option>
-              <option>Refrigerator</option>
+            <option selected  value="">Choose...</option>
+              <option <?php if($row['category'] == 'AC' ) { echo 'selected'; }   ?>>AC</option>
+              <option <?php if($row['category'] == 'Smart Watch' ) { echo 'selected'; }?>>Smart Watch</option>
+              <option <?php if($row['category'] == 'Smart TV' ) { echo 'selected'; }?>>Smart TV</option>
+              <option <?php if($row['category'] == 'Laptop' ) { echo 'selected'; }?> >Laptop</option>
+              <option <?php if($row['category'] == 'Refrigerator' ) { echo 'selected'; }?>>Refrigerator</option>
+              <option <?php if($row['category'] == 'Fan' ) { echo 'selected'; }?>>Fan</option>
             </select>
           </div>
         </div>
@@ -72,7 +73,7 @@ include './navbar.php';
           <div class="col-md-12 col-sm-12 text-end my-2">
             <button type="submit" name="submit" class="btn btn-primary " 
             value="<?php
-include './config.php';
+include '../config/config.php';
 
 if (isset($_POST['submit'])) {
     $category = $_POST['category'];
@@ -80,6 +81,10 @@ if (isset($_POST['submit'])) {
     $price = $_POST['price'];
     $quantity = $_POST['quantity'];
     $image = $_POST['image'];
+    
+    
+
+    print_r($image);
 
     $query = "UPDATE `electronic_shop` SET category = '$category' , type = '$type' , price = '$price' , quantity = '$quantity', image = '$image' WHERE id = $id";
     $result = mysqli_query($conn, $query);
@@ -105,7 +110,7 @@ if (isset($_POST['submit'])) {
 
 
 <?php
-include './footer.php'
+include '../footer/footer.php'
 ?>
 
  

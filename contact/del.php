@@ -1,5 +1,5 @@
 <?php
-include './config.php';
+include '../config/config.php';
 $id = $_GET['id'];
 $query = "DELETE FROM `contact` WHERE `id`= $id";
 

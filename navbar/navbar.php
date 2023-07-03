@@ -7,10 +7,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-white fs-5 ms-5" aria-current="page" href="./home.php">Home</a>
+          <a class="nav-link active text-white fs-5 ms-5" aria-current="page" href="../home/home.php">Home</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link text-white fs-5" href="./home.php">Product</a>
+          <a class="nav-link text-white fs-5" href="../product/product.php">Product</a>
         </li>
         <li class="nav-item dropdown ms-3">
           <a class="nav-link dropdown-toggle text-white fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -27,18 +27,20 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white fs-5 ms-3" href="./about.php">About Us</a>
+          <a class="nav-link text-white fs-5 ms-3" href="../about/about.php">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white fs-5 ms-3" href="./contact.php">Contact Us</a>
+          <a class="nav-link text-white fs-5 ms-3" href="../contact/contact.php">Contact Us</a>
         </li>
         <li class="nav-item dropdown ms-3">
           <a class="nav-link dropdown-toggle text-white fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Admin
           </a>
           <ul class="dropdown-menu ">
-            <li><a class="dropdown-item " href="./product.php"> Products</a></li>
-            <li><a class="dropdown-item " href="./contactT.php"> Contact Us messgaes</a></li>
+            <li><a class="dropdown-item " href="../adminProduct/adminProduct.php"> Products</a></li>
+            <li><a class="dropdown-item " href="../contact/contactT.php"> Contact Us messgaes</a></li>
+            <li><a class="dropdown-item " href="../purchase/purchaseTable.php">Purchased items List</a></li>
+            <li><a class="dropdown-item " href="../addToCart/cart.php">Cart List</a></li>
 
           
            
