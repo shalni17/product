@@ -43,17 +43,7 @@ include '../navbar/navbar.php';
                         <label for="productname" class="form-label">Product_name</label>
                     </div>
                     <div class="col-md-8">
-                        <input type="text" name="product" class="form-control" value="<?php  
-                       
-                        while ($row = mysqli_fetch_assoc($result)) {
-                         
-                          echo "
-                                 
-                                    <td>
-                                      " . $sno . "
-                                    </td> ";
-                                }
-                                ?>  required>
+                        <input type="text" name="product" class="form-control" required >
                     </div>
                 </div>
                 <div class="row mt-3">

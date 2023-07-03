@@ -45,9 +45,7 @@ include '../navbar/navbar.php';
                     </div>
                     <div class="col me-7 mt-3">
                         <input type="text" class="form-control " placeholder="Your Email" id="email" name="email"required></textarea>
-                         <div class="invalid-feedback">
-      Please provide a valid city.
-    </div>
+                        
                     </div>
                 </div>
                 <div class="row">
