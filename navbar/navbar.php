@@ -40,7 +40,7 @@
             <li><a class="dropdown-item " href="../adminProduct/adminProduct.php"> Products</a></li>
             <li><a class="dropdown-item " href="../contact/contactT.php"> Contact Us messgaes</a></li>
             <li><a class="dropdown-item " href="../purchase/purchaseTable.php">Purchased items List</a></li>
-            <li><a class="dropdown-item " href="../addToCart/cart.php">Cart List</a></li>
+            <li><a class="dropdown-item " href="../addToCart/cartTable.php">Cart List</a></li>
 
           
            

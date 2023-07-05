@@ -17,7 +17,7 @@
 
                     <div class="col-lg-3 col-md-6 footer-links text-secondary mt-5">
                         <h4>Usefull Links</h4>
-                        <ul class="text-white">
+                        <ul>
                             <li><a href="../home/home.php">Home</a></li>
                             <li><a href="../about/about.php">About Us</a></li>
                             <li><a href="#">Services</a></li>

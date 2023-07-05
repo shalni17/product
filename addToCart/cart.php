@@ -2,6 +2,30 @@
 include '../config/config.php';
 
 
+if (isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $address = $_POST['address'];
+    $city = $_POST['city'];
+    $state = $_POST['state'];
+    $zip = $_POST['zip'];
+   
+    $card = $_POST['card'];
+    $credit = $_POST['credit'];
+    $month = $_POST['month'];
+    $year = $_POST['year'];
+
+
+
+    $query = "INSERT INTO `add_to_cart`(`full_name`,`email`,`address`,`city`,`state`,`zip`,`card_name`,`card_number`,`exp_month`,`exp_year`)VALUES('$username','$email','$address','$city','$state','$zip','$card','$credit','$month','$year')";
+    $result = mysqli_query($conn, $query);
+
+    if (!$result) {
+        echo "sql errror";
+    } 
+}
+
+
 
 include '../header/header.php';
 include '../navbar/navbar.php';
@@ -12,7 +36,7 @@ include '../navbar/navbar.php';
     <div class="col-md-8 col-sm-12 col-12">
         <div class="card">
             <div class="card-body">
-                <form>
+                <form method="POST">
                 <div class="row">
                     <div class="col-md-6">
                         <h2 class="mb-4">Billing address</h2>
@@ -21,7 +45,7 @@ include '../navbar/navbar.php';
                             <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
                             <input type="text" class="form-control" name="username" placeholder="Username" id="username" idaria-label="Username" aria-describedby="basic-addon1" required>
                         </div>
-                        <label for="text" class="form-label">E mail</label>
+                        <label for="text" class="form-label">Email</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
                             <input type="email" class="form-control" placeholder="Email" id=email name="email" aria-label="email" aria-describedby="basic-addon1" required>
@@ -57,7 +81,7 @@ include '../navbar/navbar.php';
                     </div>
                     <div class="col-md-6">
                         <h2 class="mb-4">Payment</h2>
-                        <label for="text" class="form-label">Accepted Cards</label>
+                        <label for="text" class="form-label" name="accepted" id="accepted">Accepted Cards </label>
                         <div class="mt-3 mb-3">
                             <a href="#"><i class="fa-brands fa-google-pay"></i></a>
                             <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
@@ -82,7 +106,7 @@ include '../navbar/navbar.php';
                             <input type="text" class="form-control" name="year" id="year" aria-label="state" aria-describedby="basic-addon1"required>
                         </div>
                     </div>
-                    <button type="submit" id="checkout" class="btn btn-success mt-3" required>Continue to checkout</button>
+                    <button type="submit" id="submit" name="submit" class="btn btn-success mt-3" required>Continue to checkout</button>
                 </div>   
                 </form>
                
@@ -90,18 +114,34 @@ include '../navbar/navbar.php';
         </div>
     </div>
 
-    <div class="col-md-4 col-sm-8 col-8">
+    <div class="col-md-4 col-sm-8">
         <div class="card">
             <div class="card-body">
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="row mt-1">
+                    <div class="col-md-6 mt-2">
                         <h3 class="float-start">Cart</h3>
-
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-2">
                         <span class="float-end me-2"> <i class="fa-solid fa-cart-shopping"></i></span>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <a href="">Item 1</a>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6 ">
+                        <a href="">Item 2</a>
+                    </div>
+                    <div class="col-md-6">
+                      
+                    </div>
+                </div>
+
 
             </div>
         </div>
@@ -182,7 +222,7 @@ include '../navbar/navbar.php';
                             <input type="text" class="form-control" name="year" id="year" aria-label="state" aria-describedby="basic-addon1"required>
                         </div>
                     </div>
-                    <button type="submit" id="checkout" class="btn btn-success mt-3" required>Continue to checkout</button>
+                    <button type="submit" id="submit" name="submit" class="btn btn-success mt-3" required>Continue to checkout</button>
                 </div>   
                 </form>
                

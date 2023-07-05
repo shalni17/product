@@ -11,6 +11,7 @@ include '../navbar/navbar.php';
 ?>
 
 <div class="container">
+<h3 class="text-center mt-3">Products data</h3>
     <div class="float-end mt-5">
       <a href="./create.php"  class="btn btn-primary">Create</a>
     </div>
