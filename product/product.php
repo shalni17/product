@@ -23,7 +23,7 @@ include '../navbar/navbar.php';
             <h1>".$row['category']."</h1>
             <h3>".$row['type']."</h3>
             <h4> Price : ".$row['price']."</h4>
-            <a href='../purchase/buy.php?id=" . $row['id'] . "' class='btn btn-primary float-end '>Shop Now</a>
+            <a href='../purchase/buy.php?id=" . $row['id'] ."' class='btn btn-primary float-end '>Shop Now</a>
             <a href='../addToCart/cart.php?id=" . $row['id'] . "' class='btn btn-warning float-end me-3'>Add to cart</a>
           </div>
         </div>

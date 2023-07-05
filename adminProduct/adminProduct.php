@@ -11,6 +11,7 @@ include '../navbar/navbar.php';
 ?>
 
 <div class="container">
+<h3 class="text-center mt-3">Products data</h3>
     <div class="float-end mt-5">
       <a href="./create.php"  class="btn btn-primary">Create</a>
     </div>
@@ -54,7 +55,7 @@ include '../navbar/navbar.php';
                 </td>
          
                <td  class='text-center'>
-                  <a href='./delete.php?id=" . $row['id'] . "' class='btn btn-danger'>Delete</a>
+                  <a href='./delete.php?id=" . $row['id'] . "' class='btn btn-danger '>Delete</a>
               </td>
               <td  class='text-center'>
               <a href='./edit.php?id=" . $row['id'] . "' class='btn btn-primary'>Edit</a>

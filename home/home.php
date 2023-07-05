@@ -15,7 +15,7 @@ include '../navbar/navbar.php';
           <h4 class="mt-5">On Washing Machines,Refrigerators,TV's,</h4>
           <h4>Laptops,Mobiles and more.</h4>
 
-          <button type="button" class="btn btn-primary mt-4 ms-5 p-2 mb-5">Shop Now</button>
+          <a href="../product/product.php" class="btn btn-primary mt-4 ms-5 p-2 mb-5">Shop Now</a>
         </div>
       </div>
     </div>
