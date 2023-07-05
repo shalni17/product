@@ -60,6 +60,9 @@ include '../navbar/navbar.php';
                  <td>
                    " . $row['phone_no'] . "
                   </td>
+                  <td  class='text-center'>
+                  <a href='./dell.php?id=" . $row['id'] . "' class='btn btn-danger'>Delete</a>
+              </td>
                 
                      </tr>
                      ";

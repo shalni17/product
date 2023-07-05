@@ -18,8 +18,8 @@
                     <div class="col-lg-3 col-md-6 footer-links text-secondary mt-5">
                         <h4>Usefull Links</h4>
                         <ul class="text-white">
-                            <li><a href="./home.php">Home</a></li>
-                            <li><a href="./about.php">About Us</a></li>
+                            <li><a href="../home/home.php">Home</a></li>
+                            <li><a href="../about/about.php">About Us</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Terms of service</a></li>
                             <li><a href="#">Privacy policy</a></li>

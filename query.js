@@ -22,7 +22,7 @@ $(document).ready(function () {
             priceInput.addClass("is-valid");
         }
 
-        
+
         if (quantityInput.val() === '') {
             quantityInput.addClass("is-invalid")
         } else {
@@ -30,7 +30,7 @@ $(document).ready(function () {
             quantityInput.addClass("is-valid");
         }
 
-        
+
         if (imageInput.val() === '') {
             imageInput.addClass("is-invalid")
         } else {
@@ -61,3 +61,33 @@ $(document).ready(function () {
         }
     })
 })
+
+
+
+$(document).ready(function () {
+    $("#switch").click(function () {
+        $('#shipping_address').toggle()
+    });
+});
+
+
+var usernameInput = $('#username');
+
+$(document).ready(function () {
+    $('#checkout').on('click', function () {
+        if (usernameInput.val() === '') {
+            usernameInput.addClass("is-invalid")
+        } else {
+            usernameInput.removeClass("is-invalid");
+            usernameInput.addClass("is-valid");
+        }
+
+        if (usernameInput.val() === '') {
+            usernameInput.addClass("is-invalid")
+        } else {
+            usernameInput.removeClass("is-invalid");
+            usernameInput.addClass("is-valid");
+        }
+    })
+})
+

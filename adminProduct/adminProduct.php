@@ -54,7 +54,7 @@ include '../navbar/navbar.php';
                 </td>
          
                <td  class='text-center'>
-                  <a href='./delete.php?id=" . $row['id'] . "' class='btn btn-danger'>Delete</a>
+                  <a href='./delete.php?id=" . $row['id'] . "' class='btn btn-danger '>Delete</a>
               </td>
               <td  class='text-center'>
               <a href='./edit.php?id=" . $row['id'] . "' class='btn btn-primary'>Edit</a>
