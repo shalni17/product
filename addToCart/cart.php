@@ -1,11 +1,15 @@
 <?php
+include '../config/config.php';
+
+
+
 include '../header/header.php';
 include '../navbar/navbar.php';
 
 ?>
 
 <div class="row ms-2 me-2">
-    <div class="col-md-8">
+    <div class="col-md-8 col-sm-12 col-12">
         <div class="card">
             <div class="card-body">
                 <form>
@@ -86,7 +90,7 @@ include '../navbar/navbar.php';
         </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-8 col-8">
         <div class="card">
             <div class="card-body">
                 <div class="row">
