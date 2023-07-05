@@ -130,13 +130,10 @@ include '../navbar/navbar.php';
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
-                           
-                            <th scope="col">category</th>
+                           <th scope="col">category</th>
                             <th scope="col">price</th>
-                          
                         </tr>
                     </thead>
-
                     <tbody>
                         <?php
                         include '../config/config.php';
@@ -149,23 +146,18 @@ include '../navbar/navbar.php';
                         while ($row = mysqli_fetch_assoc($result)) {
                             echo "
                     <tr>
-                   
-                    <td>
+                   <td>
                     " . $row['category'] . "
                  </td>
                  <td>
                      " . $row['price'] . "
                  </td>
-               
-                ";
+                 ";
                         }
 
                         ?>
                     </tbody>
                 </table>
-
-
-
             </div>
         </div>
     </div>
