@@ -14,7 +14,7 @@
 <body>
   <div class="row">
     <div class="col-md-6 col-sm-8 col-8">
-      <h3 class="mt-2">Welcome to our shop</h3>
+      <h3 class="ms-4 mt-2">Welcome to our shop</h3>
     </div>
     <div class="col-md-6 col-sm-4 col-4 mt-2">
     <a href="../signup.php" class="float-end ">signUp</a>
