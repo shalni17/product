@@ -124,14 +124,14 @@ include '../navbar/navbar.php';
                         <h3 class="float-start">Cart</h3>
                     </div>
                     <div class="col-md-6 mt-2">
-                        <span class="float-end me-2"> <i class="fa-solid fa-cart-shopping"></i></span>
+                        <span class="ms-5"> <i class="fa-solid fa-cart-shopping"></i></span>
                     </div>
                 </div>
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
-                           <th scope="col">category</th>
-                            <th scope="col">price</th>
+                           <th scope="col">Category</th>
+                            <th scope="col">Price</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -148,14 +148,13 @@ include '../navbar/navbar.php';
                     <tr>
                    <td>
                     " . $row['category'] . "
-                 </td>
-                 <td>
+                   </td>
+                   <td>
                      " . $row['price'] . "
-                 </td>
-                 ";
-                        }
-
-                        ?>
+                   </td>
+                    ";
+                    }
+                    ?>
                     </tbody>
                 </table>
             </div>

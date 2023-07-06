@@ -16,12 +16,12 @@
     <div class="container-fluid d-none d-lg-flex">
       <div class="container mt-2 ">
         <div class="d-flex align-items-center">
-          <h2 class="ms-3">Welcome to our Shop</h2>
+          <h2 class="ms-2">Welcome to our Shop</h2>
 
         </div>
       </div>
-      <div class="ms-auto d-flex align-items-center float-end mt-2">
-        <h5><a href="../login.php" target="_blank" >
+      <div class="ms-auto d-flex align-items-center mt-2">
+        <h5><a href="../login.php" target="_blank" class="" >
           <span>
             Login
           </span>

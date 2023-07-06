@@ -17,11 +17,10 @@
 
                     <div class="col-lg-3 col-md-6 footer-links text-secondary mt-5">
                         <h4>Usefull Links</h4>
-<<<<<<< HEAD
                         <ul class="text-white">
-=======
+
                         <ul>
->>>>>>> 753909e7f4bfd2dd879d24fd286df779c271a2be
+
                             <li><a href="../home/home.php">Home</a></li>
                             <li><a href="../about/about.php">About Us</a></li>
                             <li><a href="#">Services</a></li>
