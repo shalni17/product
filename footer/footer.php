@@ -36,7 +36,7 @@
                             <li><a href="#">PS 5</a></li>
                             <li><a href="#">Computer</a></li>
                             <li><a href="#">Gaming Laptop</a></li>
-                            <li><a href="#">Mobile Phone</a></li>
+                            <li><a href="../category/category.php?category=mobile_phone">Mobile Phone</a></li>
                             <li><a href="#">Gaming Gadget</a></li>
                         </ul>
                     </div>
