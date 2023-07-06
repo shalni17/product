@@ -12,26 +12,13 @@
 </head>
 
 <body>
-<header class="section-header border-y">
-    <div class="container-fluid d-none d-lg-flex">
-      <div class="container mt-2 ">
-        <div class="d-flex align-items-center">
-          <h2 class="ms-2">Welcome to our Shop</h2>
-
-        </div>
-      </div>
-      <div class="ms-auto d-flex align-items-center mt-2">
-        <h5><a href="../login.php" target="_blank" class="" >
-          <span>
-            Login
-          </span>
-        </a>
-        <a href="../signup.php" target="_blank" class="ms-2">
-          <span>
-            Sign Up
-          </span>
-        </a></h5>
-      </div>
+  <div class="row">
+    <div class="col-md-6 col-sm-8 col-8">
+      <h3 class="mt-2">Welcome to our shop</h3>
     </div>
+    <div class="col-md-6 col-sm-4 col-4 mt-2">
+    <a href="../signup.php" class="float-end ">signUp</a>
+      <a href="../login.php" class="float-end me-3">Login</a>
+     
     </div>
-  </header>
+  </div>
