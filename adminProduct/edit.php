@@ -34,6 +34,7 @@ include '../navbar/navbar.php';
               <option <?php if($row['category'] == 'Laptop' ) { echo 'selected'; }?> >Laptop</option>
               <option <?php if($row['category'] == 'Refrigerator' ) { echo 'selected'; }?>>Refrigerator</option>
               <option <?php if($row['category'] == 'Fan' ) { echo 'selected'; }?>>Fan</option>
+              <option <?php if($row['category'] == 'mobile' ) { echo 'selected'; }?>>Mobile Phone</option>
             </select>
           </div>
         </div>

@@ -45,11 +45,12 @@ include '../navbar/navbar.php';
             <select class="form-select" name="category" aria-label="Default select example" id="category">
               <option selected disabled value="">Choose...</option>
               <option value="AC">AC</option>
-              <option value="Smart Watch">Smart Watch</option>
-              <option value="Smart TV">Smart TV</option>
-              <option value="Laptop">Laptop</option>
-              <option value="Refrigerator">Refrigerator</option>
-              <option value="Fan">Fan</option>
+              <option value="Smart Watch" id="watch" name="watch">Smart Watch</option>
+              <option value="Smart TV" id="tv" name="tv">Smart TV</option>
+              <option value="Laptop" id="laptop" name="laptop">Laptop</option>
+              <option value="Refrigerator" id="refrigerator" name="refrigerator">Refrigerator</option>
+              <option value="Fan" id="fan" name="fan">Fan</option>
+              <option value="mobile" id="mobile" name="mobile" >Mobile Phone</option>
             </select>
           </div>
         </div>

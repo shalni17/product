@@ -17,13 +17,13 @@
             Category
           </a>
           <ul class="dropdown-menu  ">
-            <li><a class="dropdown-item " href="#"> Mobile Phone</a></li>
-
-            <li><a class="dropdown-item " href="#"> Laptop</a></li>
-            <li><a class="dropdown-item " href="#"> Fan</a></li>
-            <li><a class="dropdown-item " href="#"> Refrigerator</a></li>
-            <li><a class="dropdown-item " href="#"></i> AC</a></li>
-            <li><a class="dropdown-item " href="#"></i> Smart Watch</a></li>
+            <li><a class="dropdown-item " href="../category/category.php?category=Mobile Phone"> Mobile Phone</a></li>
+            <li><a class="dropdown-item " href="../category/category.php?category=Laptop"> Laptop</a></li>
+            <li><a class="dropdown-item " href="../category/category.php?category=Fan"> Fan</a></li>
+            <li><a class="dropdown-item " href="../category/category.php?category=Refrigerator"> Refrigerator</a></li>
+            <li><a class="dropdown-item " href="../category/category.php?category=AC"></i> AC</a></li>
+            <li><a class="dropdown-item " href="../category/category.php?category=Smart Watch"></i> Smart Watch</a></li>
+            <li><a class="dropdown-item " href="../category/category.php?category=Smart TV"></i> Smart TV</a></li>
           </ul>
         </li>
         <li class="nav-item">
