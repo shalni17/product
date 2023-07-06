@@ -28,13 +28,13 @@ include '../navbar/navbar.php';
           <div class="col-md-8 col-sm-8 col-8">
             <select class="form-select" name="category" aria-label="Default select example" name="category" id="category" value="<?php echo $row['category'] ?>" >
             <option selected  value="">Choose...</option>
-              <option <?php if($row['category'] == 'AC' ) { echo 'selected'; }   ?>>AC</option>
-              <option <?php if($row['category'] == 'Smart Watch' ) { echo 'selected'; }?>>Smart Watch</option>
-              <option <?php if($row['category'] == 'Smart TV' ) { echo 'selected'; }?>>Smart TV</option>
-              <option <?php if($row['category'] == 'Laptop' ) { echo 'selected'; }?> >Laptop</option>
-              <option <?php if($row['category'] == 'Refrigerator' ) { echo 'selected'; }?>>Refrigerator</option>
-              <option <?php if($row['category'] == 'Fan' ) { echo 'selected'; }?>>Fan</option>
-              <option <?php if($row['category'] == 'mobile' ) { echo 'selected'; }?>>Mobile Phone</option>
+              <option <?php if($row['category'] == 'ac' ) { echo 'selected'; }   ?>>AC</option>
+              <option <?php if($row['category'] == 'smart_watch' ) { echo 'selected'; }?>>Smart Watch</option>
+              <option <?php if($row['category'] == 'smart_tv' ) { echo 'selected'; }?>>Smart TV</option>
+              <option <?php if($row['category'] == 'laptop' ) { echo 'selected'; }?> >Laptop</option>
+              <option <?php if($row['category'] == 'refrigerator' ) { echo 'selected'; }?>>Refrigerator</option>
+              <option <?php if($row['category'] == 'fan' ) { echo 'selected'; }?>>Fan</option>
+              <option <?php if($row['category'] == 'mobile_phone' ) { echo 'selected'; }?>>Mobile Phone</option>
             </select>
           </div>
         </div>

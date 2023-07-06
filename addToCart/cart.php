@@ -39,7 +39,7 @@ include '../navbar/navbar.php';
                 <form method="POST">
                     <div class="row">
                         <div class="col-md-6">
-                            <h2 class="mb-4">Billing address</h2>
+                            <h2 class="mb-4" id="billing" >Billing address</h2>
                             <label for="text" class="form-label">Full Name</label>
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
@@ -169,7 +169,7 @@ include '../navbar/navbar.php';
                 <form>
                     <div class="row">
                         <div class="col-md-6">
-                            <h2 class="mb-4">Shipping address</h2>
+                            <h2 class="mb-4" id="shipping"  >Shipping address</h2>
                             <label for="text" class="form-label">Full Name</label>
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>

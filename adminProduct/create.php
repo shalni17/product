@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
     $name = $image['name'];
     $temp_name = $image['tmp_name'];
     $full_path = $image['full_path'];
-   
+
     $path = '../image/uploadProductImage/' . $name;
     $isUploaded = move_uploaded_file($temp_name, $path);
   } else {
@@ -44,13 +44,13 @@ include '../navbar/navbar.php';
           <div class="col-md-8 col-sm-8 col-8">
             <select class="form-select" name="category" aria-label="Default select example" id="category">
               <option selected disabled value="">Choose...</option>
-              <option value="AC">AC</option>
-              <option value="Smart Watch" id="watch" name="watch">Smart Watch</option>
-              <option value="Smart TV" id="tv" name="tv">Smart TV</option>
-              <option value="Laptop" id="laptop" name="laptop">Laptop</option>
-              <option value="Refrigerator" id="refrigerator" name="refrigerator">Refrigerator</option>
-              <option value="Fan" id="fan" name="fan">Fan</option>
-              <option value="mobile" id="mobile" name="mobile" >Mobile Phone</option>
+              <option value="ac">ac</option>
+              <option value="smart_watch" id="smart_watch" name="smart_watch">smart_watch</option>
+              <option value="smart_tv" id="smarttv" name="smarttv">smart_tv</option>
+              <option value="laptop" id="laptop" name="laptop">laptop</option>
+              <option value="refrigerator" id="refrigerator" name="refrigerator">refrigerator</option>
+              <option value="fan" id="fan" name="fan">fan</option>
+              <option value="mobile_phone" id="mobile_phone" name="mobile_phone">mobile_phone</option>
             </select>
           </div>
         </div>

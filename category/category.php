@@ -10,14 +10,15 @@ $query = "SELECT * From `electronic_shop` WHERE `category` = '$category'";
 $result = mysqli_query($conn, $query);
 ?>
 
-<div class="container-fluid ms-3 me-3">
+<div class="container-fluid">
     <div class="row">
-
+    <h1 class='text-center mt-4 fst-italic mb-5 text-uppercase'> <?php echo $category ?></h1>
 
         <?php
         while ($row = mysqli_fetch_assoc($result)) {
             echo "
-            <h1 class='text-center mt-4 fst-italic mb-5'> ".$row['category']."</h1>
+
+         
                     <div class='col-md-3'>
                         <div class='card'style='width: 100%;'>
                         <div class='card-body'>
