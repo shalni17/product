@@ -12,7 +12,7 @@ $result = mysqli_query($conn, $query);
 
 <div class="container-fluid">
     <div class="row">
-    <h1 class='text-center mt-4 fst-italic mb-5 text-uppercase'> <?php echo $category ?></h1>
+        <h1 class='text-center mt-4 fst-italic mb-5 text-uppercase'> <?php echo $category ?></h1>
 
         <?php
         while ($row = mysqli_fetch_assoc($result)) {
@@ -33,7 +33,6 @@ $result = mysqli_query($conn, $query);
                     </div>
                  ";
         }
-
         ?>
     </div>
 </div>
