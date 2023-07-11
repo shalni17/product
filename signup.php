@@ -1,3 +1,52 @@
+<?php
+session_start();
+include './config/config.php';
+
+if (!empty($_POST)) {
+    $email = $_POST['email'];
+    $name = $_POST['name'];
+    $gender = $_POST['gender'];
+    $password = $_POST['password'];
+    $cpassword = $_POST['cpassword'];
+    $pass = password_hash($cpassword, PASSWORD_DEFAULT);
+
+    if ($email == 'shalnipalial28@gmail.com') {
+        $account = 'admin';
+    } else {
+        $account = 'user';
+    }
+    $sql = "SELECT * FROM `login` WHERE `email`='$email' ";
+    $res = mysqli_query($conn, $sql);
+    $check_email = mysqli_fetch_row($res);
+    if ($check_email > 0) {
+        echo "email already exist";
+    } else {
+        if ($password === $cpassword) {
+            $query = "INSERT INTO `login`(`email`,`name`,`gender`, `password` , `account_type`) Values('$email','$name','$gender','$pass', '$account')";
+            $result = mysqli_query($conn, $query);
+
+            if (!$result) {
+                echo "sql errror";
+            } else {
+                $_SESSION['email'] = $email;
+                $_SESSION['name'] = $name;
+                $_SESSION['gender'] = $gender;
+                $_SESSION['account'] = $account;
+                $_SESSION['login_user'] = true;
+
+                header('location:./home/home.php');
+            }
+        } else {
+            echo  "password does not match";
+        }
+    }
+}
+
+?>
+
+
+
+
 <!doctype html>
 <html lang="en">
 
@@ -13,37 +62,53 @@
 <body class="imgbg">
     <div class="container ">
         <div class=" ">
-            <form class="row text-center">
+            <form class="row text-center" method="post">
                 <div class="col-md-3 col-sm-3 col-3"></div>
                 <div class="col-md-6 col-sm-6 col-6">
                     <h1 class="text-light mt-5 text-center"><b>Sign Up </b></h1>
                     <div class="row">
                         <div class="col-md-5 col-sm-5 col-5">
-                            <label for="Username" class="form-label mt-3 text-light"><b>Username</b></label>
+                            <label for="email" class="form-label mt-3 text-light"><b>Email</b></label>
                         </div>
                         <div class="col-md-7 col-sm-7 col-7">
-                            <input type="text" id="loginuser" name="username" class="form-control mt-3">
+                            <input type="email" id="email" name="email" class="form-control mt-3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 col-5">
+                            <label for="name" class="form-label mt-3 text-light"><b>Name</b></label>
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-7">
+                            <input type="text" id="name" name="name" class="form-control mt-3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 col-5">
+                            <label for="gender" class="form-label mt-3 text-light"><b>Gender</b></label>
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-7">
+                            <select class="form-select mt-3" aria-label="Default select example" name="gender" id="gender">
+                                <option selected disabled value="">Choose...</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                                <option value="3">Transgender</option>
+                            </select>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-5 col-sm-5 col-5">
                             <label for="password" class="form-label mt-3 text-light"><b>Password</b></label>
                         </div>
-                        <div class="col-md-7 col-sm-7 col-7"><input type="password" id="loginpass" name="password" class="form-control mt-3">
+                        <div class="col-md-7 col-sm-7 col-7">
+                            <input type="password" id="password" name="password" class="form-control mt-3">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-5 col-sm-5 col-5">
-                            <label for="password" class="form-label mt-3 text-light"><b> Confirm Password</b></label>
+                            <label for="cpassword" class="form-label mt-3 text-light"><b> Confirm Password</b></label>
                         </div>
-                        <div class="col-md-7 col-sm-7 col-7"><input type="password" id="loginpass" name="password" class="form-control mt-3">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5 col-sm-5 col-5">
-                            <label for="email" class="form-label mt-3 text-light"><b>Email</b></label>
-                        </div>
-                        <div class="col-md-7 col-sm-7 col-7"><input type="email" id="loginpass" name="password" class="form-control mt-3">
+                        <div class="col-md-7 col-sm-7 col-7">
+                            <input type="password" id="cpassword" name="cpassword" class="form-control mt-3">
                         </div>
                     </div>
                     <div class="mt-3 text-center col-md-12 col-sm-12 col-12 mt-5">

@@ -12,13 +12,35 @@
 </head>
 
 <body>
-  <div class="row">
-    <div class="col-md-6 col-sm-8 col-8">
-      <h3 class="ms-4 mt-2">Welcome to our shop</h3>
-    </div>
-    <div class="col-md-6 col-sm-4 col-4 mt-2">
-    <a href="../signup.php" class="float-end ">signUp</a>
-      <a href="../login.php" class="float-end me-3">Login</a>
-     
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-sm-8 col-8">
+        <h3 class="ms-4 mt-2">Welcome to our shop</h3>
+      </div>
+      <div class="col-md-6 col-sm-4 col-4 mt-2 text-end">
+
+        <?php
+        if (!$_SESSION['login_user']) {
+          echo '
+                <a href="../signup.php" class="float-end ">signUp</a>
+                <a href="../login.php" class="float-end me-3">Login</a>
+            ';
+        } else {
+
+          echo  '<div class="dropdown">
+            <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            
+              <img src="../image/2-35.jpg" class="img-fluid rounded" width="50">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            </div>';
+        }
+        ?>
+      </div>
+
     </div>
   </div>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../config/config.php';
 
 $query = "SELECT * FROM `buy`";
@@ -11,7 +12,7 @@ include '../navbar/navbar.php';
 
 
   <div class="container">
-    <a href="../home/home.php" class="btn btn-primary float-end mt-3">Home</a>
+    <a href="../home/home.php" class="btn btn-primary mt-3">Home</a>
 
     <table class="table">
       <thead>

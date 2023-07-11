@@ -91,15 +91,15 @@ include '../navbar/navbar.php';
 
                 <div class="row mt-3">
                     <div class="col-md-4">
-                        <label for="phoneno" class="form-label">Phone_no</label>
+                        <label for="phone" class="form-label">Phone</label>
                     </div>
                     <div class="col-md-8">
-                        <input type="text" name="phone" class="form-control" required>
+                        <input type="tel" name="phone" class="form-control" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <button type="submit" class="btn btn-success float-end mt-3 mb-3" name="purchase">Purchase</button>
+                        <a href="../purchase/purchaseTable.php" type="submit" class="btn btn-success float-end mt-3 mb-3" name="purchase">Purchase</a>
                     </div>
                 </div>
             </form>

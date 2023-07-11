@@ -32,21 +32,26 @@
         <li class="nav-item">
           <a class="nav-link text-white fs-5 ms-3" href="../contact/contact.php">Contact Us</a>
         </li>
-        <li class="nav-item dropdown ms-3">
+        <li class="nav-item">
+          <a class="nav-link text-white fs-5 ms-3" href="../purchase/purchaseTable.php">My orders</a>
+        </li>
+        <?php
+        if ($_SESSION['account'] == 'admin') {
+          echo '
+          <li class="nav-item dropdown ms-3">
           <a class="nav-link dropdown-toggle text-white fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Admin
           </a>
           <ul class="dropdown-menu ">
             <li><a class="dropdown-item " href="../adminProduct/adminProduct.php"> Products</a></li>
             <li><a class="dropdown-item " href="../contact/contactT.php"> Contact Us messgaes</a></li>
-            <li><a class="dropdown-item " href="../purchase/purchaseTable.php">Purchased items List</a></li>
             <li><a class="dropdown-item " href="../addToCart/cartTable.php">Cart List</a></li>
 
-          
-           
           </ul>
         </li>
-
+        ';
+        }
+        ?>
       </ul>
       <div class="bg-white">
         <form class="d-flex" role="search">
@@ -57,5 +62,3 @@
     </div>
   </div>
 </nav>
-
-

@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../config/config.php';
 
 
@@ -11,7 +12,7 @@ include '../navbar/navbar.php';
 ?>
 <div class="container-fluid">
   <div class="row">
-    <h1 class='text-center mt-4 fst-italic mb-5'> Products</h1>
+    <h1 class='text-center mt-4 fst-italic mb-5  text-uppercase'> Products</h1>
 
     <?php
     while ($row = mysqli_fetch_assoc($result)) {
@@ -20,7 +21,7 @@ include '../navbar/navbar.php';
         <div class='card mb-5' style='max-width: 100%;'>
           <div class='card-body'>
             <img src= '../image/uploadProductImage/" . $row['image'] . "' class='img-fluid'>
-            <h1>" . $row['category'] . "</h1>
+            <h1 class=' text-uppercase'>" . $row['category'] . "</h1>
             <h4>" . $row['type'] . "</h4>
             <h5> Price : " . $row['price'] . "</h5>
             <a href='../purchase/buy.php?id=" . $row['id'] . "' class='btn btn-primary float-end '>Shop Now</a>
