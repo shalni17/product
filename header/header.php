@@ -22,23 +22,39 @@
         <?php
         if (!$_SESSION['login_user']) {
           echo '
-                <a href="../signup.php" class="float-end ">signUp</a>
+                <a href="../signup.php" class="float-end">signUp</a>
                 <a href="../login.php" class="float-end me-3">Login</a>
             ';
         } else {
-
-          echo  '<div class="dropdown">
-            <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          if (!empty($_SESSION['image'])) {
+            echo  '<div class="dropdown">
+                <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../image/userImages/'.$_SESSION['image'].'" class="img-fluid rounded" width="50">
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../config/logout.php">Logout</a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+                </div>';
+          } else {
+            echo  '<div class="dropdown">
+              <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             
-              <img src="../image/2-35.jpg" class="img-fluid rounded" width="50">
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-            </div>';
+              <img src="../image/userImages/'.$_SESSION['gender'].'.png" class="img-fluid rounded" width="50">
+
+                
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../config/logout.php">Logout</a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+              </ul>
+              </div>';
+          }
         }
+
+
         ?>
       </div>
 

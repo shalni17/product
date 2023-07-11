@@ -12,7 +12,7 @@ include '../navbar/navbar.php';
 
 
   <div class="container">
-    <a href="../home/home.php" class="btn btn-primary mt-3">Home</a>
+    <a href="../home/home.php" class="btn btn-primary mt-3 float-end">Home</a>
 
     <table class="table">
       <thead>

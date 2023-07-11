@@ -82,7 +82,11 @@
 
 
 
-
+if($gender === male){
+    <img src="../image/uploadProductImage\male-avatar-boy-face-man-user-9.svg" class="img-fluid rounded" width="50">
+}else{
+    <img src="../image/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png" class="img-fluid rounded" width="50">
+}
 
 
 

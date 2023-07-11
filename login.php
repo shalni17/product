@@ -18,7 +18,8 @@ if (!empty($_POST)) {
         }else{
             $_SESSION['email'] = $email;
             $_SESSION['name'] = $name;
-            $_SESSION['gender'] = $gender;
+            $_SESSION['gender'] =  $db_data['gender'];
+            $_SESSION['image'] = $db_data['image'];
             $_SESSION['account'] = $db_data['account_type'];
             $_SESSION['login_user'] = true;
 

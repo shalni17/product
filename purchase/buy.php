@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../config/config.php';
 
 if (isset($_POST['purchase'])) {
@@ -16,6 +17,8 @@ if (isset($_POST['purchase'])) {
 
     if (!$result) {
         echo "sql errror";
+    }else{
+        header('location:../purchase/purchaseTable.php');
     }
 }
 
@@ -23,10 +26,6 @@ $id = $_GET['id'];
 $query  = "SELECT * FROM `electronic_shop` WHERE `id` = $id";
 $result = mysqli_query($conn,$query);
 $row = mysqli_fetch_assoc($result);
-
-
-
-
 
 include '../header/header.php';
 include '../navbar/navbar.php';
@@ -99,7 +98,7 @@ include '../navbar/navbar.php';
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="../purchase/purchaseTable.php" type="submit" class="btn btn-success float-end mt-3 mb-3" name="purchase">Purchase</a>
+                        <button type="submit" class="btn btn-success float-end mt-3 mb-3" name="purchase">Purchase</button>
                     </div>
                 </div>
             </form>

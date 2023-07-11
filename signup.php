@@ -32,13 +32,14 @@ if (!empty($_POST)) {
                 $_SESSION['name'] = $name;
                 $_SESSION['gender'] = $gender;
                 $_SESSION['account'] = $account;
-                $_SESSION['login_user'] = true;
+                
 
                 header('location:./home/home.php');
             }
         } else {
             echo  "password does not match";
         }
+        
     }
 }
 
@@ -89,9 +90,9 @@ if (!empty($_POST)) {
                         <div class="col-md-7 col-sm-7 col-7">
                             <select class="form-select mt-3" aria-label="Default select example" name="gender" id="gender">
                                 <option selected disabled value="">Choose...</option>
-                                <option value="1">Male</option>
-                                <option value="2">Female</option>
-                                <option value="3">Transgender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="transgender">Transgender</option>
                             </select>
                         </div>
                     </div>
