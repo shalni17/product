@@ -29,11 +29,7 @@ if (!empty($_POST)) {
         echo "email does not exist ";
     }
 }
-
-
 ?>
-
-
 <!doctype html>
 <html lang="en">
 
@@ -45,7 +41,6 @@ if (!empty($_POST)) {
 
     <link rel="stylesheet" href="./assets/style.css">
 </head>
-
 
 <body class="imgbg">
     <div class="container ">
@@ -72,8 +67,6 @@ if (!empty($_POST)) {
                     <a href="./signup.php" class="text-light me-3"><b>Sign up</b></a>
                     <button type="submit" id="button1" class="btn btn-success  col-sm-" name="submit">Submit</button>
                 </div>
-
-
             </div>
             <div class="col-mn-3 col-sm-3 col-3"></div>
         </form>

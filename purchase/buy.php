@@ -106,7 +106,7 @@ include '../navbar/navbar.php';
 
         </div>
         <div class="col-md-6">
-            <img src="../image/Electronics-Shop.png" class="img-fluid">
+            <img src="../image/uploadProductImage/Electronics-Shop.png" class="img-fluid">
         </div>
 
 

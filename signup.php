@@ -33,20 +33,14 @@ if (!empty($_POST)) {
                 $_SESSION['gender'] = $gender;
                 $_SESSION['account'] = $account;
                 
-
                 header('location:./home/home.php');
             }
         } else {
             echo  "password does not match";
         }
-        
     }
 }
-
 ?>
-
-
-
 
 <!doctype html>
 <html lang="en">
@@ -116,8 +110,6 @@ if (!empty($_POST)) {
                         <a href="./login.php" class="text-light me-3"><b>Login</b></a>
                         <button type="submit" id="button1" class="btn btn-success  col-sm-" name="submit">Submit</button>
                     </div>
-
-
                 </div>
                 <div class="col-mnd-3"></div>
             </form>

@@ -32,7 +32,7 @@ include '../navbar/navbar.php';
                             </b></label>
                     </div>
                     <div class="col-md-7 col-sm-8 mt-3">
-                        <input type="text" class="form-control" placeholder="Your name" id="touch" name="touch"required></textarea>
+                        <input type="text" class="form-control" placeholder="Your name" id="touch" name="touch" required></textarea>
                     </div>
                 </div>
 
@@ -43,8 +43,8 @@ include '../navbar/navbar.php';
                             </b></label>
                     </div>
                     <div class="col me-7 mt-3">
-                        <input type="text" class="form-control " placeholder="Your Email" id="email" name="email"required></textarea>
-                        
+                        <input type="text" class="form-control " placeholder="Your Email" id="email" name="email" required></textarea>
+
                     </div>
                 </div>
                 <div class="row">
@@ -76,13 +76,15 @@ include '../navbar/navbar.php';
                         <div class="text-end me-4">
                             <button type="submit" class="btn btn-warning mb-3" name="submit" id="submit">Send to the outer space</button>
                             <button type="submit" class="btn btn-secondary mb-3" name="back" id="button">Back</button>
-                        </div>
 
+
+                        </div>
+                       
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 col-12">
-                <img src="../image/1474287957_18TSa8_electronics-shutterstock-470.jpg" class="img-fluid">
+                <img src="../image/uploadProductImage/1474287957_18TSa8_electronics-shutterstock-470.jpg" class="img-fluid">
             </div>
 
         </div>
