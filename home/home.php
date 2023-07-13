@@ -10,12 +10,32 @@ include '../navbar/navbar.php';
     <div class="col-md-6 col-sm-6">
       <div class="row">
         <div class="col-md-12 col-sm-12">
-          <h1 class="mt-4 fst-italic"><b>Electronic Products</b></h1>
-          <h1 class="fst-italic"><b>Up to<span class="text-warning"> 50%</span> off</b></h1>
 
-          <h4 class="mt-5">On Washing Machines,Refrigerators,TV's,</h4>
-          <h4>Laptops,Mobiles and more.</h4>
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h1 class="mt-4 fst-italic"><b>Electronic Products</b></h1>
+                <h1 class="fst-italic"><b>Up to<span class="text-warning"> 50%</span> off</b></h1>
 
+                <h4 class="mt-5">On Washing Machines,Refrigerators,TV's,</h4>
+                <h4>Laptops,Mobiles and more.</h4>
+              </div>
+              <div class="carousel-item">
+                <h1 class="mt-4 fst-italic"><b>Electronic Products</b></h1>
+                <h1 class="fst-italic"><b>Up to<span class="text-warning"> 50%</span> off</b></h1>
+
+                <h4 class="mt-5">On Washing Machines,Refrigerators,TV's,</h4>
+                <h4>Laptops,Mobiles and more.</h4>
+              </div>
+              <div class="carousel-item">
+                <h1 class="mt-4 fst-italic"><b>Electronic Products</b></h1>
+                <h1 class="fst-italic"><b>Up to<span class="text-warning"> 50%</span> off</b></h1>
+
+                <h4 class="mt-5">On Washing Machines,Refrigerators,TV's,</h4>
+                <h4>Laptops,Mobiles and more.</h4>
+              </div>
+            </div>
+          </div>
           <a href="../product/product.php" class="btn btn-primary mt-4 ms-5 p-2 mb-5">Shop Now</a>
         </div>
       </div>
