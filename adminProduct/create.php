@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../config/config.php';
 
 if (isset($_POST['submit'])) {
@@ -93,7 +94,7 @@ include '../navbar/navbar.php';
         </div>
       </div>
       <div class="col-md-6 col-sm-12 col-12 col-lg-6  col-xxl-6 mt-5">
-        <img src="../image/electronics.jpg" class="img-fluid">
+        <img src="../image/uploadProductImalectronge/eics.jpg" class="img-fluid">
       </div>
     </div>
   </form>

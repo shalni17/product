@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../config/config.php';
 
 $id = $_GET['id'];
@@ -101,7 +102,7 @@ if (isset($_POST['submit'])) {
         </div>
       </div>
       <div class="col-md-6 col-sm-12 col-12 col-lg-6  col-xxl-6 mt-5">
-        <img src="./image/electronics.jpg" class="img-fluid">
+        <img src="../image/uploadProductImage/electronics.jpg" class="img-fluid">
       </div>
     </div>
   </form>
