@@ -4,7 +4,6 @@ include '../header/header.php';
 include '../navbar/navbar.php';
 ?>
 
-
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-6 col-sm-6">
@@ -13,21 +12,21 @@ include '../navbar/navbar.php';
 
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active " data-bs-interval="3000">
                 <h1 class="mt-4 fst-italic"><b>Electronic Products</b></h1>
                 <h1 class="fst-italic"><b>Up to<span class="text-warning"> 50%</span> off</b></h1>
 
                 <h4 class="mt-5">On Washing Machines,Refrigerators,TV's,</h4>
                 <h4>Laptops,Mobiles and more.</h4>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="3000">
                 <h1 class="mt-4 fst-italic"><b>Electronic Products</b></h1>
                 <h1 class="fst-italic"><b>Up to<span class="text-warning"> 50%</span> off</b></h1>
 
                 <h4 class="mt-5">On Washing Machines,Refrigerators,TV's,</h4>
                 <h4>Laptops,Mobiles and more.</h4>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="3000">
                 <h1 class="mt-4 fst-italic"><b>Electronic Products</b></h1>
                 <h1 class="fst-italic"><b>Up to<span class="text-warning"> 50%</span> off</b></h1>
 
